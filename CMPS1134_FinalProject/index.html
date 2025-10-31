@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMPS1134 Final Project</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="To-Do List application project — clean, responsive site layout">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="team.html">Team</a>
+    <a href="videos.html">Videos</a>
+    <a href="docs.html">Documentation</a>
+    <a href="to_do_list.html">To-Do</a>
+  </nav>
+  <hr>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <h1 class="hero-title">CMPS1134 – Fundamentals of Computing</h1>
+        <p class="lead">A simple, responsive to-do app prototype demonstrating local storage, multi-tab sync, and a clean UI.</p>
+        <div class="hero-ctas">
+          <a href="to_do_list.html" class="btn btn-primary btn-lg">Get Started</a>
+          <a href="docs.html" class="btn btn-ghost btn-lg">Learn More</a>
+        </div>
+        <p style="margin-top:18px;"><strong>Student:</strong> Adrian Morris, Placeholders — <strong>Project:</strong> To-Do List Application (Prototype)</p>
+        <img src="assets/app.png" alt="App screenshot" class="rounded-xl drop-shadow-md" style="max-width:780px; width:90%; margin-top:22px;"/>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container-wide">
+        <h2>Features</h2>
+        <div class="feature-grid">
+          <div class="feature">
+            <h3>Persistent tasks</h3>
+            <p>Tasks save locally so they stay after refresh.</p>
+          </div>
+          <div class="feature">
+            <h3>Multi-tab sync</h3>
+            <p>Changes propagate across open tabs instantly.</p>
+          </div>
+          <div class="feature">
+            <h3>Accessible UI</h3>
+            <p>Keyboard-friendly controls and clear contrast.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container-wide footer-inner">
+      <div>© <span id="year"></span> CMPS1134 Project</div>
+      <div class="footer-links">
+        <a href="docs.html">Documentation</a>
+        <a href="team.html">Team</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
+</body>
+</html>

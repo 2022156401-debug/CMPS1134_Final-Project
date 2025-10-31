@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('websitebg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  line-height: 1.4;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Fastodo accent (yellow) for optional elements ported from Fastodo styles */
+.bg-yellow { background: #ffd54a; color: #1f1f1f; }
+
+/* Site navigation */
+nav {
+  background: rgba(12,12,12,0.15);
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 15px;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+nav a:hover {
+  transform: translateY(-2px);
+}
+
+h1, h2 {
+  margin: 16px 0;
+  color: white;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 24px 28px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  width: 90%;
+  max-width: 800px;
+  margin: 28px auto;
+  text-align: center;
+}
+
+
+
+.hero-inner {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 16px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.lead {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin: 15px 0;
+  display: inline-block;
+}
+
+.feature {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+/* Layout: header / hero / features / footer similar to Wix style */
+.site-header { background: transparent; padding: 18px 12px; }
+.header-inner { max-width: 1100px; margin: 0 auto; display:flex; align-items:center; gap:18px; }
+.logo { font-weight:800; font-size:20px; color:var(--ash-lighter); }
+.main-nav { margin-left: auto; }
+.main-nav a { margin: 0 12px; color:var(--ash-light); text-decoration:none; }
+.header-cta { margin-left: 18px; }
+
+.hero { padding: 56px 12px; text-align:center; }
+.hero-inner { max-width: 900px; margin: 0 auto; }
+.hero h1 { font-size: 56px; line-height:1.02; margin-bottom: 12px; color:var(--ash-lighter); font-weight:800; }
+.hero .lead { font-size:18px; color:var(--ash-light); margin-bottom:18px; }
+.hero-ctas .btn { margin-right:10px; }
+
+/* Fastodo-like hero CTA styles */
+.hero-ctas { margin-top: 18px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+.btn-lg { padding: 14px 20px; font-size:18px; border-radius:12px; }
+.rounded-xl { border-radius: 12px; }
+.drop-shadow-md { box-shadow: 0 8px 24px rgba(0,0,0,0.16); }
+
+.container-wide { max-width:1100px; margin: 0 auto; padding: 0 12px; }
+.features { padding: 24px 0 48px 0; }
+.feature-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:18px; margin-top:18px; }
+.feature { background: rgba(255,255,255,0.02); padding:18px; border:1px solid var(--ash); border-radius:10px; }
+.feature h3 { margin:0 0 8px 0; color:var(--ash-lighter); }
+.feature p { margin:0; color:var(--ash-light); }
+
+.about { padding: 0 0 48px 0; }
+
+.site-footer { border-top:1px solid var(--ash); padding:18px 0; margin-top:34px; }
+.footer-inner { max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; padding: 0 12px; color:var(--ash-light); }
+.footer-links a { color:var(--ash-light); margin-left:12px; }
+
+/* Buttons */
+.btn { display:inline-block; padding:10px 16px; border-radius:8px; text-decoration:none; }
+.btn-primary { background: var(--accent); color: #111; box-shadow: 0 8px 20px rgba(0,0,0,0.18); border: 1px solid rgba(0,0,0,0.06); }
+.btn-ghost { background:transparent; color:var(--ash-light); border:1px solid rgba(255,255,255,0.04); }
+
+@media (max-width:600px) {
+  .hero h1 { font-size:28px; }
+  .header-inner { flex-wrap:wrap; }
+  .main-nav { order:3; width:100%; text-align:center; margin-top:12px; }
+  .header-cta { order:2; margin-left:0; }
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+input[type="text"], input[type="search"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid var(--ash);
+  border-radius: 8px;
+  font-size: 15px;
+  background: rgba(255,255,255,0.03);
+  color: var(--ash-light);
+}
+
+button {
+  padding: 10px 14px;
+  margin-left: 10px;
+  border: none;
+  background-color: #2575fc;
+  color: var(--ash-lighter);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 120ms ease;
+}
+
+button:hover { background-color: #1e5bd8; }
+
+ul { list-style-type: none; padding: 0; margin: 0; }
+
+li {
+  background: rgba(255,255,255,0.03);
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+li.completed { text-decoration: line-through; color: var(--ash); background-color: rgba(255,255,255,0.02); }
+
+.delete-btn {
+  background-color: #e74c3c;
+  border: none;
+  color: var(--ash-lighter);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* To-do widget styles */
+.todo-toggle {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  background: #2575fc;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 999px;
+  box-shadow: 0 6px 18px rgba(37,117,252,0.25);
+  cursor: pointer;
+  z-index: 3;
+}
+
+.todo-toggle .todo-badge {
+  display: inline-block;
+  min-width: 20px;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: #e74c3c;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+/* small nav counter for completed today */
+.nav-todo-count {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 13px;
+  color: #d0f0d6; /* pale green */
+  font-weight: 700;
+}
+
+.todo-modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 360px;
+  max-width: calc(100% - 40px);
+  transform: translate(-50%, -48%) scale(0.98);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 160ms ease, transform 160ms ease;
+  z-index: 3;
+}
+
+.todo-modal.open { opacity: 1; transform: translate(-50%, -50%) scale(1); pointer-events: auto; }
+
+/* Expanded modal when opened from ribbon/nav (larger, more app-like) */
+.todo-modal.expanded {
+  width: 720px;
+  max-width: calc(100% - 40px);
+}
+
+.todo-card {
+  background: rgba(255,255,255,0.96);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+.todo-header { display:flex; align-items:center; justify-content:space-between; padding:10px 12px; border-bottom:1px solid #eee; }
+.todo-header h3 { margin:0; font-size:16px; }
+.todo-close { background:none; border:none; cursor:pointer; font-size:16px; }
+.todo-body { padding:12px; }
+.todo-body .input-section { margin-bottom:10px; }
+.todo-body input { width: 65%; }
+.todo-body button { margin-left:8px; }
+.todo-body ul { max-height: 260px; overflow:auto; }
+
+/* Small responsive tweaks */
+@media (min-width: 900px) {
+  .container { width: 420px; }
+  /* enable fixed attachment on larger screens for a nicer effect when an image is present */
+  body { background-attachment: fixed; }
+}
